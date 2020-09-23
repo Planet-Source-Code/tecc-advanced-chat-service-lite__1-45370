@@ -1,0 +1,45 @@
+res_001 - username accepted
+res_002 - connected, send username
+res_003 - joined channel ok
+res_004 - User list follows
+res_005 - Quit from channel
+res_006 - Channel has been deleted
+res_007 - Channel list follows
+
+err_001 - username exists
+err_002 - username invalid
+err_003 - invalid command or syntax
+err_004 - Channel invalid
+err_005 - Channel does not exist
+err_006 - Already a member of this channel
+err_007 - No permission
+err_008 - Not a member of that channel
+err_009 - Invalid Message
+
+msg_chn - Message from channel
+msg_pvt - Message from private user
+
+
+RESPONSE FORMAT:
+
+msg_chn:   msg_chn comsep channel comsep user comsep message
+
+msg_pvt:   msg_pvt comsep userid comsep user comsep message
+
+res_004:   res_004 comsep channel comsep userlist
+
+res_003:   res_003 comsep channel comsep topic
+
+
+REQUEST FORMAT:
+
+user:	user comsep username
+
+join:   join comsep channel
+
+list:   list comsep channel
+
+quit:	quit comsep channel
+
+send:	send comsep channel comsep message
+
